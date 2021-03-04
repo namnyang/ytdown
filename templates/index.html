@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h1 class="heading">Youtube Downloader</h1>
+    <form method="POST" action="/download">
+        <input type="url" name='urlinput' class="URL-input" placeholder="https://www.youtube.com/watch?v=XXXXXXXXXXX">
+        <button type="submit" class="convert-button">Download</button>
+    </form>
+    <p>{{url}}</p>
+</body>
+</html>
